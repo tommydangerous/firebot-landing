@@ -71,30 +71,52 @@ body {
   text-align: center;
   width: 100%; }
   .pages-index .name h1 {
-    font-family: "Existence Light";
-    font-size: 61px; }
+    font-family: "Existence Light"; }
+    @media screen and (min-width: 0px) and (max-width: 360px) {
+      .pages-index .name h1 {
+        font-size: 49px; } }
+    @media screen and (min-width: 360px) {
+      .pages-index .name h1 {
+        font-size: 61px; } }
   .pages-index .name p {
     font-size: 18px; }
+  @media screen and (min-width: 0px) and (max-width: 360px) {
+    .pages-index .name p {
+      display: none; } }
 .pages-index .logo {
   background-image: url("/img/logo.png");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 200px 200px;
-  height: 200px;
-  margin-left: -100px;
-  margin-top: -100px;
   left: 50%;
   opacity: 0.65;
   position: absolute;
-  top: 50%;
-  width: 200px; }
+  top: 50%; }
+  @media screen and (min-width: 0px) and (max-width: 360px) {
+    .pages-index .logo {
+      background-size: 150px 150px;
+      height: 150px;
+      margin-left: -75px;
+      margin-top: -75px;
+      width: 150px; } }
+  @media screen and (min-width: 360px) {
+    .pages-index .logo {
+      background-size: 200px 200px;
+      height: 200px;
+      margin-left: -100px;
+      margin-top: -100px;
+      width: 200px; } }
 .pages-index .coming {
   bottom: 0;
   position: absolute;
   padding-bottom: 60px;
   width: 100%; }
   .pages-index .coming p {
-    font-size: 15px;
     text-align: center; }
+    @media screen and (min-width: 0px) and (max-width: 360px) {
+      .pages-index .coming p {
+        font-size: 13px; } }
+    @media screen and (min-width: 360px) {
+      .pages-index .coming p {
+        font-size: 15px; } }
 
 /*# sourceMappingURL=application.css.map */
