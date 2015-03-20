@@ -5,7 +5,7 @@ html, body {
 }
 body {
   color: $white;
-  font-family: "Roboto Light";
+  font-family: $font-family;
   font-weight: 300;
   overflow-x: hidden;
   .wrapper {

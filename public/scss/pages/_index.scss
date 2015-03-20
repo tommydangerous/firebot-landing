@@ -1,7 +1,7 @@
 $logo-size: $spacing * 10;
 .pages-index {
   .gradient {
-    @include gradient(rgb(10, 0, 0), rgb(40, 0, 0));
+    @include gradient(rgb(125, 0, 0), rgb(100, 0, 100));
     height: 100%;
     position: absolute;
     width: 100%;
@@ -12,7 +12,7 @@ $logo-size: $spacing * 10;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.5;
     position: absolute;
     width: 100%;
   }
@@ -24,14 +24,14 @@ $logo-size: $spacing * 10;
     h1 {
       font-family: "Existence Light";
       @include screen-xs {
-        font-size: $font-size-larger-1;
+        font-size: $font-size-large-2;
       }
       @include screen-sm-min {
-        font-size: $font-size-larger-2;
+        font-size: $font-size-larger-1;
       }
     }
     p {
-      font-size: $font-size-normal-2;
+      font-size: $font-size-normal-1;
     }
     @include screen-xs {
       p {
@@ -44,17 +44,24 @@ $logo-size: $spacing * 10;
     background-position: 0 0;
     background-repeat: no-repeat;
     left: 50%;
-    opacity: 0.65;
+    // opacity: 0.65;
     position: absolute;
     top: 50%;
     @include screen-xs {
+      background-size: ($logo-size * 0.5) ($logo-size * 0.5);
+      height: ($logo-size * 0.5);
+      margin-left: -0.5 * ($logo-size * 0.5);
+      margin-top: -0.5 * ($logo-size * 0.5);
+      width: ($logo-size * 0.5);
+    }
+    @include screen-sm {
       background-size: ($logo-size * 0.75) ($logo-size * 0.75);
       height: ($logo-size * 0.75);
       margin-left: -0.5 * ($logo-size * 0.75);
       margin-top: -0.5 * ($logo-size * 0.75);
       width: ($logo-size * 0.75);
     }
-    @include screen-sm-min {
+    @include screen-md-min {
       background-size: $logo-size $logo-size;
       height: $logo-size;
       margin-left: -0.5 * $logo-size;
