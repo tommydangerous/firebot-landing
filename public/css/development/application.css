@@ -90,6 +90,10 @@ body {
   left: 50%;
   position: absolute;
   top: 50%; }
+  .pages-index .logo.opacity-1 {
+    opacity: 0.5; }
+  .pages-index .logo.opacity-2 {
+    opacity: 0.25; }
   @media screen and (min-width: 0px) and (max-width: 360px) {
     .pages-index .logo {
       background-size: 100px 100px;

@@ -44,9 +44,14 @@ $logo-size: $spacing * 10;
     background-position: 0 0;
     background-repeat: no-repeat;
     left: 50%;
-    // opacity: 0.65;
     position: absolute;
     top: 50%;
+    &.opacity-1 {
+      opacity: 0.5;
+    }
+    &.opacity-2 {
+      opacity: 0.25;
+    }
     @include screen-xs {
       background-size: ($logo-size * 0.5) ($logo-size * 0.5);
       height: ($logo-size * 0.5);
